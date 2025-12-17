@@ -1,0 +1,24 @@
+body{font-family: 'Calibri', 'Times New Roman', 'Verdana';
+    background-color: #FBF3B9;}
+nav {text-align:center;}
+.nav-link {padding: 10px;}
+h1, h2{text-align: center;}
+.intro-text {text-align: justify;}
+.project-title {text-align: center;}
+.container {display: flex;
+           flex-direction: row-reverse;
+           justify-content: space-around;
+           flex-wrap: wrap;
+           padding: 20px;}
+.items {
+    flex: 1 1 45%;
+    padding: 20px;
+    background-color: #A9C46C;
+    border-color: #FBF3B9;
+    border-width: 5px;
+    border-style: solid;
+}
+.items img {
+    width: 100%;
+    height: auto;
+}
