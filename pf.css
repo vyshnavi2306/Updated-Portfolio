@@ -2,6 +2,9 @@ body{font-family: 'Calibri', 'Times New Roman', 'Verdana';
     background-color: #FBF3B9;}
 nav {text-align:center;}
 .nav-link {padding: 10px;}
+nav a {
+  text-decoration: none;
+}
 h1, h2{text-align: center;}
 .intro-text {text-align: justify;}
 .project-title {text-align: center;}
@@ -22,3 +25,13 @@ h1, h2{text-align: center;}
     width: 100%;
     height: auto;
 }
+footer {
+  text-align: center;
+  padding: 20px;
+}
+footer a{
+  text-decoration: none;
+}
+a {color: darkblue;}
+a:hover {text-decoration: underline;
+         color: rgb(94, 45, 11);;}
