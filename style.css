@@ -1,0 +1,239 @@
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Calibri, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #6a11cb;       /* gradient accent color */
+    transform: scale(1.05); /* slight grow */
+    text-decoration: underline; /* optional */
+}
+section {
+    padding: 60px 5%;
+}
+h1, h2, h3, h4 {
+    margin-bottom: 20px;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Hero Section --- */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 0 10%;
+}
+
+#hero .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#hero .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero-btn {
+    padding: 10px 20px;
+    margin-right: 15px;
+    background-color: white;
+    color: #2575fc;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.hero-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+#hero .hero-img {
+    max-width: 450px;
+}
+
+/* --- Section Titles --- */
+section h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #2575fc;
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* --- About Section --- */
+#about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+#about .about-text {
+    flex: 1;
+    min-width: 300px;
+}
+#about .about-text p {
+    margin-bottom: 15px;
+}
+#about .about-text span {
+    font-weight: 600;
+    color: #2575fc;
+    transition: color 0.3s ease;
+}
+#about .about-text span:hover {
+    color: #6a11cb;
+}
+#about .about-img {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+#about .about-img img {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 4px solid #2575fc;
+}
+
+/* --- Skills Section --- */
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+.skill-card h4 {
+    margin-bottom: 10px;
+    color: #2575fc;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 10%;
+    }
+    #hero .hero-img {
+        margin-top: 30px;
+    }
+    #about {
+        flex-direction: column;
+    }
+    #contact {
+        flex-direction: column;
+    }
+}
+
+/* --- Project Card Style --- */
+.project-card {
+    background: white;
+    border-radius: 15px;       /* 4 corners rounded */
+    padding: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Project card images: keep original aspect ratio */
+.project-card img {
+    width: 100%;
+    height: auto;           /* maintain aspect ratio */
+    border-radius: 15px;    
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect: lift card + slight zoom (only scales width slightly) */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.project-card:hover img {
+    transform: scale(1.03);  /* smaller zoom to avoid cropping */
+}
+
+/* Buttons */
+.project-buttons {
+    margin: 15px 0;
+}
+.project-buttons .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background: #2575fc;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.project-buttons .btn:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Featured Project: Centered horizontally, larger image */
+.featured {
+    max-width: 900px;       /* make featured project wider */
+    margin: 0 auto 50px auto;
+}
+.featured img {
+    max-width: 100%;
+    height: auto;           /* keep original aspect ratio */
+}
+
+/* Responsive Grid */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

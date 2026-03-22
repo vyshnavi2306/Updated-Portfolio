@@ -1,64 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="./pf.css">
-    </head>
-    <body>
-        <nav>
-            <a href="#project" class="nav-link">Projects</a>
-            <a href="#internship" class="nav-link">Internship</a>
-            <a href="#contact" class="nav-link">Contact Me</a>
-        </nav>
-        <h1>Hello, It's Me</h1>
-        <h2>Madhu Vyshnavi Somisetty</h2>
-        <p class="intro-text">I am a fresher Java Full Stack learner with strong fundamentals in HTML, CSS, JavaScript and Python. I have built and hosted responsive web projects using GitHub Pages and gained hands-on experience through an internship. I am currently upskilling in Java Full Stack Development and actively seeking an entry-level developer opportunity where I can learn, contribute, and grow.</p>
-        <h3 id="project">Projects</h3>
-        <div class="container">
-            <div class="items">
-                <h4 class="project-title">Coffee Shop Website</h4>
-                <img src="./project 1.png" alt="Coffee Shop Website Screenshot">
-                <p>Tech Used: HTML, CSS</p>
-                <ul>
-                    <li>Designed and developed a responsive coffee shop–themed website using HTML and CSS.</li>
-                    <li>Implemented multiple pages including Home, Menu, About Us, and Contact sections.</li>
-                    <li>Used Git for version control and deployed the project live using GitHub Pages.</li>
-                </ul>
-                <h4>Project Links:</h4>
-                <a href="https://github.com/vyshnavi2306/coffee-shop" target="_blank">Source Code</a>
-                <a href="https://vyshnavi2306.github.io/coffee-shop/" target="_blank">Live Demo</a>
-                <a href="https://www.loom.com/share/6b92eff8dc3c4bffb08efa1e447ec7c6" target="_blank">Video Demo</a>
-            </div>
-            <div class="items">
-                <h4 class="project-title">MGNREGA District Tracker</h4>
-                <img src="./project 2.png" alt="District Tracker Website Screenshot">
-                <p>Tech Used: HTML, CSS, JavaScript, APIs</p>
-                <ul>
-                    <li>Developed an interactive web application to track MGNREGA scheme implementation and performance across Indian districts.</li>
-                    <li>Fetched and displayed district-wise MGNREGA statistics using APIs and JavaScript.</li>
-                    <li>Designed a clean and responsive user interface for better data visualization.</li>
-                    <li>Created a screen-recorded instructional video to demonstrate project functionality.</li>
-                </ul>
-                <h4>Project Links:</h4>
-                <a href="https://github.com/vyshnavi2306/MGNREGA-Tracker" target="_blank">Source Code</a>
-                <a href="https://vyshnavi2306.github.io/MGNREGA-Tracker/" target="_blank">Live Demo</a>
-                <a href="https://www.loom.com/share/c333186256a54a14a0ebe11a1a98d62c" target="_blank">Video Demo</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MERN stack developer portfolio of Madhu Vyshnavi">
+    <title>Madhu Vyshnavi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section id="hero">
+    <div class="hero-text">
+        <h1>From idea to working app — made real.</h1>
+        <p>
+            Hi, I’m <strong>Madhu Vyshnavi Somisetty</strong>, a MERN stack developer who enjoys turning ideas into practical, user-friendly web applications.
+        </p>
+        <p> I focus on building complete products with clean interfaces and solid backend logic — creating tools for the real world, not just projects for a repository.</p>
+        <a href="#featured-project" class="hero-btn">View Projects</a>
+        <a href="#contact" class="hero-btn">Contact Me</a>
+    </div>
+   <!-- <div class="hero-img">
+        <img src="./images/mypic.jpg" alt="Profile Image">
+    </div> -->
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container">
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+            I’m a developer who genuinely enjoys figuring things out — whether it’s debugging an API issue, designing a clean UI, or building a full-stack application from scratch.
+        </p>
+        <p>
+            With a background in Electronics & Communication Engineering, I naturally approach problems in a structured and logical way. But what really drives me is creating applications that people can actually use and benefit from.
+        </p>
+        <p>
+            I’ve worked on projects ranging from data dashboards to full-stack systems with authentication and real-time features. Through these, I’ve learned how to build applications that are not just functional, but also meaningful and scalable.
+        </p>
+        <p>
+            Right now, I’m continuing to grow through hands-on full-stack training while also expanding into Java development to become a more versatile developer.
+        </p>
+    </div>
+    <div class="about-img">
+        <img src="./images/mypic.jpg" alt="About Image">
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h4>Programming Languages</h4>
+            <p>Python, JavaScript (ES6+), Java</p>
+        </div>
+
+        <div class="skill-card">
+            <h4>Frontend</h4>
+            <p>HTML5, CSS3, JS, React.js</p>
+        </div>
+
+        <div class="skill-card">
+            <h4>Backend</h4>
+            <p>Node.js, Express.js</p>
+        </div>
+
+        <div class="skill-card">
+            <h4>Database</h4>
+            <p>MongoDB, SQL</p>
+        </div>
+
+        <div class="skill-card">
+            <h4>Tools & Technologies</h4>
+            <p>GitHub, GitLab, Postman, REST APIs, JWT Authentication</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TRAINING -->
+<section id="training" class="container">
+    <h2>Training & Professional Development</h2>
+    <h3>Java Full Stack Development Program — TalentSprint | <em>Nov 2025 – Present</em></h3>
+    <ul>
+        <li>Currently undergoing structured, hands-on training focused on building scalable, production-ready applications</li>
+        <li>Gained expertise in full-stack development using the MERN stack</li>
+        <li>Designing and integrating RESTful APIs for end-to-end web applications</li>
+        <li>Strengthened problem-solving skills and coding fundamentals through guided Python exercises</li>
+        <li>Actively upskilling in Java to expand into Java full-stack development</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<!-- FEATURED PROJECT -->
+<section id="featured-project" class="container">
+    <h2>Featured Project</h2>
+
+    <div class="project-card featured">
+        <img src="./images/hope-drop.png" alt="Hope Drop Screenshot">
+
+        <h3>Hope Drop – Blood Bank Management System</h3>
+        <p>
+            Managing blood donations and requests efficiently is critical, but often lacks a centralized digital solution. To address this, I built <strong>Hope Drop</strong>, a full-stack MERN application that allows users and hospitals to manage blood requests in a streamlined way.
+        </p>
+        <br>
+        <h4>Tech Stack</h4>
+        <p>MongoDB, Express.js, React.js, Node.js</p>
+        <br>
+        <h4>Integrations</h4>
+        <p>NodeMailer (for email notifications)</p>
+        <br>
+        <h4>Key Features</h4>
+        <ul>
+            <li>Role-based access for users and hospitals</li>
+            <li>Secure JWT authentication for login</li>
+            <li>Blood request and management system</li>
+            <li>Email notifications for user request approvals</li>
+            <li>Global state management using React Context API</li>
+            <li>Deployed on Render</li>
+        </ul>
+
+        <div class="project-buttons">
+            <a href="https://hope-drop-frontend.onrender.com" target="_blank" class="btn">Live Demo</a>
+            <a href="https://gitlab.com/vyshnavi2306/hope_drop" target="_blank" class="btn">Code</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ALL PROJECTS -->
+<section id="projects" class="container">
+    <h2>All Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="/images/mgnrega.png" alt="MGNREGA Screenshot">
+            <h3>MGNREGA District Tracker</h3>
+            <p>Accessing government data can often be confusing and hard to interpret. This dashboard makes it simple to explore district-wise info.</p>
+            <br>
+            <h4>Tech Stack</h4>
+            <p>HTML, CSS, JavaScript, APIs</p>
+            <div class="project-buttons">
+                <a href="https://vyshnavi2306.github.io/MGNREGA-Tracker/" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/vyshnavi2306/MGNREGA-Tracker" target="_blank" class="btn">Code</a>
             </div>
         </div>
-        <h3 id="internship">Internship</h3>
-        <h4>Interactive Web Application Development Intern</h4>
-        <p>Company: Swecha AP</p>
-        <ul>
-            <li>Developed interactive and responsive web pages using HTML and CSS as part of a team-based project.</li>
-            <li>Collaborated closely with team members to achieve project objectives and meet deadlines.</li>
-            <li>Gained hands-on experience in collaborative development and version control practices.</li>
-        </ul>
-        <h4>Project Live Link:</h4>
-        <a href="https://vyshnavi2306.github.io/Swecha-Internship/" target="_blank">View Project</a>
-        <footer id="contact">
-            <p>© 2025 Madhu Vyshnavi • <a href="https://www.linkedin.com/in/madhu-vyshnavi-67807127a" target="_blank">LinkedIn</a> • <a href="mailto:madhuvyshnavi1234@gmail.com">Email</a> • <a href="https://github.com/vyshnavi2306" target="_blank">GitHub</a></p>
-        </footer>
-    </body>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="./images/book-finder.png" alt="Book Finder Screenshot">
+            <h3>Book Finder App</h3>
+            <p>This React-based app allows users to search for books and instantly view results in a clean, card-based layout.</p>
+            <br>
+            <h4>Tech Stack</h4>
+            <p>React.js, APIs, CSS</p>
+            <div class="project-buttons">
+                <a href="https://react-book-finder-app-alpha.vercel.app/" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/vyshnavi2306/react-book-finder-app" target="_blank" class="btn">Code</a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <img src="./images/coffe-shop.png" alt="Coffee Bliss Screenshot">
+            <h3>Coffee Bliss – Coffee Shop Website</h3>
+            <p>Small businesses often need a simple yet appealing online presence. This project creates a clean, image-focused website.</p>
+            <br>
+            <h4>Tech Stack</h4>
+            <p>HTML, CSS</p>
+            <div class="project-buttons">
+                <a href="https://vyshnavi2306.github.io/coffee-shop/" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/vyshnavi2306/coffee-shop" target="_blank" class="btn">Code</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="container">
+    <h2>Internship</h2>
+    <h3>Web Development Intern — Swecha AP</h3>
+    <p>
+        During my internship, I worked on building responsive web pages and collaborating with a team to deliver project components on time. This experience helped me improve my frontend development speed, attention to detail, and understanding of how real-world projects are structured and delivered.
+    </p>
+    <div class="project-buttons">
+                <a href="https://vyshnavi2306.github.io/Swecha-Internship/" target="_blank" class="btn">Live Demo</a>
+                <a href="https://github.com/vyshnavi2306/Swecha-Internship" target="_blank" class="btn">Code</a>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="container">
+    <h2>Certifications</h2>
+    <ul>
+        <li>Completed SQL certification course from PrepInsta</li>
+        <li>Completed Python certification course from PrepInsta</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+    <h2>Contact</h2>
+    <p><strong>Let’s build something meaningful together.</strong></p>
+    <br>
+    <p>
+        If you’re looking for someone who can turn ideas into working applications, I’d love to connect.
+    </p>
+    <p>📧 Email: <a href="mailto:madhuvyshnavi1234@gmail.com">madhuvyshnavi1234@gmail.com</a>&nbsp; • &nbsp;
+      🔗<a href="http://www.linkedin.com/in/madhu-vyshnavi-67807127a" target="_blank"> LinkedIn</a>&nbsp; • &nbsp;
+      💻<a href="https://github.com/vyshnavi2306" target="_blank"> GitHub</a>&nbsp; &nbsp;
+    </p>
+</section>
+
+</body>
 </html>
